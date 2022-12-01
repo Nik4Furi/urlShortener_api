@@ -1,0 +1,27 @@
+<!-- Component of the Header -->
+<%- include('../partials/Header.ejs'); %>
+
+<!-- Component of the Navbar -->
+<%- include('../partials/Navbar.ejs'); %>
+
+<!-- Alert Component -->
+<%- include('../partials/Alert.ejs'); %>
+
+<!-- Start from here our home page  -->
+<div class="container my-2 mx-auto w-75" style="min-height: 90vh;">
+  <div class="d-flex flex-column">
+    <h1>Welcome in <span class="text-uppercase fw-bold text-danger">url-shortner</span>!</h1>
+    <p class="lead">URL-shortner can help you to short any url and can easy to use in,also short url can understand
+      and learn easily ,So what are you waiting for!</p>
+  </div>
+
+
+  <!-- Post Url Component  -->
+  <%- include('../partials/PostUrls.ejs')%>
+
+  <!-- Show Urls Component  -->
+  <%- include('../partials/ShowUrls.ejs')%>
+</div>
+
+<!-- Component of the Footer -->
+<%- include('../partials/Footer.ejs'); %>

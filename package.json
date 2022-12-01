@@ -1,18 +1,20 @@
 {
-  "name": "url-shortner",
+  "name": "urlShortener",
   "version": "1.0.0",
-  "description": "This app is called url-shortner,where any one type or paste any url and get into the short form, which can help to easily understand or share any one ",
-  "main": "app.js",
+  "description": "urlShortener is fullstack app, which is basically short any kind of url, after entering by the users.Also automatically delete any urls data which is 24 hours old. ",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js -e ejs,js",
-    "dev": "nodemon app.js -e ejs,js"
+    "start": "node server.js -e ejs,js",
+    "dev": "nodemon server.js -e ejs,js"
   },
   "author": "Nik",
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.8",
     "express": "^4.18.1",
+    "express-flash": "0.0.2",
+    "express-session": "^1.17.3",
     "mongoose": "^6.5.5",
     "shortid": "^2.2.16"
   },

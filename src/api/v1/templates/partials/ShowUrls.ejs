@@ -1,0 +1,29 @@
+<section class="container my-2">
+    <table class="table table-hover ">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">Full-Url</th>
+            <th scope="col">Short-Url</th>
+          </tr>
+        </thead>
+        <tbody class="table-secondary">
+            <% urls.forEach(url=>{ %>
+                <tr>
+                <td><a href="<%= url.fullurl%>" target="_blank" rel="noopener noreferrer">
+                    <%= url.fullurl%>
+                    </a></td>
+                <td><a href="<%= url.fullurl%>" target="_blank" rel="noopener noreferrer">
+                    <%= url.shorturl%>
+                    </a></td>
+                </tr>
+            <% }) %>
+
+            <% if(urls.length <= 0) {%>
+                <tr>
+                  <td><span class="text-danger fw-800">No url is here, Short your first url now!</span></td>
+                  <td>-</td>
+                </tr>
+            <% } %>
+        </tbody>
+      </table>
+</section>
