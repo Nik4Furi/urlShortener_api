@@ -1,0 +1,5 @@
+## Dependies folders and files
+node_modules/
+
+## Secret keys are in there(can be access or denoted by 'process.env.variable_name')
+.env

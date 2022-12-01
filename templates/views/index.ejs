@@ -1,0 +1,55 @@
+<!-- Component of the Header -->
+<%- include('../partials/Header.ejs'); %>
+
+  <!-- Component of the Navbar -->
+  <%- include('../partials/Navbar.ejs'); %>
+
+    <!-- Start from here our home page  -->
+    <div class="container my-2 mx-auto w-75" style="min-height: 90vh;">
+      <div class="d-flex flex-column">
+        <h1>Welcome in <span class="text-uppercase fw-bold text-danger">url-shortner</span>!</h1>
+        <p class="lead">URL-shortner can help you to short any url and can easy to use in,also short url can understand
+          and learn easily ,So what are you waiting for!</p>
+
+        <!-- type the url and click on the button of short url to getting short url  -->
+        <form class="d-flex my-3" role="search" action="/shorturls" method="post">
+          <input class="form-control me-2 border border-dark" type="search" minlength="7" required
+            placeholder="Type the url" aria-label="Search" name="url">
+          <button class="btn btn-dark" type="submit">Search</button>
+        </form>
+      </div>
+
+      <!-- our table where we see all the urls which we are shorts or types on the search bar  -->
+      <table class="table table-hover ">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">Full-Url</th>
+            <th scope="col">Short-Url</th>
+            <th scope="col">Clicks</th>
+          </tr>
+        </thead>
+        <tbody class="table-secondary">
+          <% shorturls.forEach(shorturls=>{ %>
+            <tr>
+              <td><a href="<%= shorturls.fullurl%>" target="_blank" rel="noopener noreferrer">
+                  <%= shorturls.fullurl%>
+                </a></td>
+              <td><a href="<%= shorturls.shorturl%>" target="_blank" rel="noopener noreferrer">
+                  <%= shorturls.shorturl%>
+                </a></td>
+              <td>
+                <%= shorturls.clicks %>
+              </td>
+            </tr>
+            <% }) %>
+
+
+
+
+        </tbody>
+      </table>
+
+    </div>
+
+    <!-- Component of the Footer -->
+    <%- include('../partials/Footer.ejs'); %>
