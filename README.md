@@ -28,14 +28,9 @@ urlShortener_api, is fullstack app, basically made on EJS Templates. Have the fu
 
 
 <p text-align=left>
-  <img src="https://user-images.githubusercontent.com/91304976/203487604-039a41aa-c4ae-4fad-b76e-1b72ce7f0f78.png" width="400" height="" alt="urlShortener_api_home"/>
+  <img src="https://user-images.githubusercontent.com/91304976/204721877-6cbaa9d2-bb18-4ebf-bfa9-35b198afc6ed.png" width="400" height="" alt="urlShortener_api_home"/>
   
-  <img src="https://user-images.githubusercontent.com/91304976/203487609-5fe50b57-c865-4fd1-90ec-9dec2eddec73.png" width="500" height="" alt="urlShortener_api_link"/>  
  </p>
- 
- <p text-align=right>
-  <img src="https://user-images.githubusercontent.com/91304976/203487568-85d8befe-a0d0-4905-9910-f07505259b99.png" width="400" height="" alt="urlShortener_api_download"/>
-</p>
 
 <a href="#urlShortener_api">Go Home </a>
 
@@ -44,10 +39,8 @@ urlShortener_api, is fullstack app, basically made on EJS Templates. Have the fu
 ## <h2 id="demos" >Demo </h2>
 
 <p text-align=left>
-  <img src="https://user-images.githubusercontent.com/91304976/203494510-77735dad-2653-4835-8d86-8915b384abeb.gif" width="500" height="" alt="urlShortener_api_home"/>
+  <img src="https://user-images.githubusercontent.com/91304976/204722243-26ab6d3e-5f5d-4948-8768-99f6e09d1c55.gif" width="500" height="" alt="urlShortener_api_home"/>
     
-    
-  <img src="https://user-images.githubusercontent.com/91304976/203494536-92cc8b0e-1189-4e22-b6c0-81c07418cfcc.gif" width="500" height="" alt="urlShortener_api_download"/>  
  </p>
  
 
