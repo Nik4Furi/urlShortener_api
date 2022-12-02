@@ -1,6 +1,7 @@
 # <h1 id="urlShortener_api"> urlShortener_api ![GitHub package.json version](https://img.shields.io/github/package-json/v/Nik4Furi/urlShortener_api) </h1>
-### A fullstack app, which is short any url after entering by the users. We use '<a href="https://ejs.co" target="_ejs">EJS templates</a>' to build this fullstack app.
-urlShortener_api, is fullstack app, basically made on EJS Templates. Have the functionality to create url, read urls from database. But also have specific feature, it can automatically delete any urls data which is 24 hours old.
+### A <a href="https://en.wikipedia.com/wiki/rest-api" target="_ejs">REST API </a> project, which is short the urls after entering by the users.
+urlShortener_api, is REST API project, which is create the short the urls after entering by the users any url, and read the urls data from database.Alos have specific feature, it is automatically deleting the urls data from database, which is 24 hours old.
+  So this api is used as , you create any frontend app(<a href="https://github.com/Nik4Furi/urlShortener" target="_url">urlShortener </a>), and this frontend app make the request via this apis.
 
 ## Indexing the contents
 ####   <p><a href="#badges" >Badges</a></p>
@@ -10,7 +11,7 @@ urlShortener_api, is fullstack app, basically made on EJS Templates. Have the fu
 ####   <p><a href="#runLocally" >Run Locally</a></p>
 ####   <p><a href="#envVar" >Environment Variables</a></p>
 ####   <p><a href="#colorsRef" >Color References</a></p>
-####   <p><a href="#routersRef" >Routers References</a></p>
+####   <p><a href="#apiRef" >API References</a></p>
 ####   <p><a href="#usages" >Usages/Examples</a></p>
 ####   <p><a href="#features" >Features</a></p>
 ####   <p><a href="#relatedProjects" >Related Projects</a></p>
@@ -58,14 +59,17 @@ urlShortener_api, is fullstack app, basically made on EJS Templates. Have the fu
 
 ## <h2 id="stack" >Tech Stack </h2>
 
-
-**Server:** NodeJS, ExpressJS, MongoDB, EJS
+**Client:** React, Bootstrap <a href="https://github.com/Nik4Furi/urlShotener" target="_blank" rel="noopener noreferrer">(urlShotener)</a> (Its frontend part)
+**Server:** NodeJS, ExpressJS, MongoDB <a href="https://github.com/Nik4Furi/urlShotener" target="_blank" rel="noopener noreferrer">(urlShotener_api)</a> (Its backend part)
 
 <a href="#urlShortener_api">Go Home </a>
 
 
 
 ## <h2 id="runLocally" >Run Locally </h2>
+
+#### To run this project, you ensure that all basic requirements are indeed into your PC, such as mongodb, and nodejs is already install your PC. 
+##### If not plz refer this videos  <a href="https://www.youtube.com/results?search_query=install+node+js+" target="_blank" rel="noopener noreferrer">Install node js</a>,<a href="https://www.youtube.com/results?search_query=install+mongodb" target="_blank" rel="noopener noreferrer">Install mongoDB</a>  ,or you did it yourselves👍.
 
 Clone the project
 
@@ -90,7 +94,7 @@ Start the server
 ```bash
   npm run start (start for only time)
 
-  npm run dev (Run or restart server, whenever you save any file(js,ejs))
+  npm run dev (Run or restart server, whenever you save any file(js))
 ```
 
 <a href="#urlShortener_api">Go Home </a>
@@ -101,7 +105,7 @@ To run this project, you will need to add the following environment variables fo
 
 Version Configurations
  
-`VERSION` = v1
+`VERSION` = v2
 
 Server Configurations
 
@@ -115,40 +119,26 @@ Database configurations
 `DB_PORT`   
 `DB_NAME`   
 
-Session key configurations
-
-`SECRET_SESSION_KEY`
-
 <a href="#urlShortener_api">Go Home </a>
 
 
 
-## <h2 id="colorsRef">Color Reference </h2>
+## <h2 id="apiRef">API Reference </h2>
 
-| Color             | Hex                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Primary Color |  #dc3545 |
-
-<a href="#urlShortener_api">Go Home </a>
-
-
-
-## <h2 id="routersRef">Routers Reference </h2>
-
-#### Home Page, with urls data from database
+#### Fetch all urls data from database
 
 ```http
-  GET /
+  GET /api/urls/FetchUrls
 ```
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| - | `get` | See our home page,where we see the form to post urls and urls data |
+| - | `get` | Fetch all urls data from database |
 
-#### Upload File
+#### Post/submit the url for short into database
 
 ```http
-  POST /PostUrl
+  POST /api/urls/PostUrl
 ```
 
 | Parameter | Type     | Description                       |
@@ -177,8 +167,8 @@ module.exports =  DeleteDoc24Hour
 ## <h2 id="features">Features </h2>
 
 - Delete any urls data which is 24 hours old
-- Use Components to build these app
-- Use <a href="https://en.wikipedia.org/wiki/Model-view-controller" target="_blank" rel="noopener noreferrer"></a>MVC Architecture</a> to controlling accured in project.
+- Use Error-Handling techniques to handle errors or server requests
+- Use <a href="https://en.wikipedia.org/wiki/Model-view-controller" target="_blank" rel="noopener noreferrer">MVC Architecture</a> to controlling accured in project.
 
 <a href="#urlShortener_api">Go Home </a>
 
@@ -188,8 +178,8 @@ module.exports =  DeleteDoc24Hour
 
 Here are some related projects
 
-[urlShortener_api](https://github.com/Nik4Furi/urlShortener_api)
+[urlShortener](https://github.com/Nik4Furi/urlShortener_api)
 
-[inotes](https://github.com/Nik4Furi/inotes)
+[inotes_api](https://github.com/Nik4Furi/inotes_api)
 
 
