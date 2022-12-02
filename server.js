@@ -37,8 +37,15 @@ if (process.env.VERSION == 'v1') {
     app.use('/', Routers)
 }
 
+//-----------------------Check our app version is 2, is specially for made API, which work another frontend REACT app----------------X 
+if (process.env.VERSION == 'v2' ) {
+    let Routers = require('./src/api/v2/routers') //our routers end points
+
+    app.use('/api/urls',Routers)
+}
+
 //----------------------Domain and urls ports configurations variables------------X
-const Domain = process.env.DOMAIN || 'http://localhost';
+const Domain = process.env.DOMAIN 
 const Port = process.env.PORT || 8001;
 
 //---------------------------Here we listening to the express server--------------X
