@@ -174,7 +174,7 @@ module.exports =  DeleteDoc24Hour
 
 Here are some related projects
 
-[urlShortener](https://github.com/Nik4Furi/urlShortener_api)
+[urlShortener](https://github.com/Nik4Furi/urlShortener)
 
 [inotes_api](https://github.com/Nik4Furi/inotes_api)
 
